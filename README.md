@@ -1,0 +1,6 @@
+# ShoeStore
+Shoe Store Project with safeArgs not working
+
+This is a work in process. So far, I have implemented all required Fragements/ViewModel, setup binding, added navigation and the options menu to the action bar and added the floating action button with correct navigation, and added the input fileds and operational buttons for the shoe details. All of these were working perfectly until I tried to add safeArgs following the instruction in section 3 to the letter. Everything went well until the navigation for the FAB threw and error saying arguments were needed but it would not take the one's I had setup (name, company, size and description) which worked fine in the other navigation commands in the source fragment and in the Timber.i log I added to the var Args= statement.
+
+Unfortunately, at this point I used the A.S. suggested QuickFix to remove these arguments (I assume from the FragmentDirections file since I didn't understand why any arguments were required in this navigation back to the Detail fragment as I was not trying to pass anything. After this, everything started showing errors so I used QuickFix to add the arguments back in but the problems persisted. I'm not sure what I messed up but even if I can recover this action, I still have the original issue with the FAB. I'm stuck.
