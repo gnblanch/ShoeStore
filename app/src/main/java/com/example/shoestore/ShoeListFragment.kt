@@ -35,15 +35,15 @@ class ShoeListFragment : Fragment() {
         binding.shoeListScreenViewModel = viewModel
         binding.setLifecycleOwner (this)
 
-        var args = ShoeDetailFragmentArgs.fromBundle(requireArguments())
-// Toast shows the arguments are available using their declared names
+        var args = ShoeListFragmentArgs.fromBundle(requireArguments())
+        // Toast shows the arguments are available using their declared names
         Toast.makeText(context,
                 "NameEntered: ${args.name}, CompanyEntered: ${args.company}, SizeEntered: ${args.size }, " +
                         "DescriptionEntered: ${args.description}", Toast.LENGTH_LONG).show()
 
         binding.fabToDetails.setOnClickListener { view: View ->
-            view.findNavController().navigate(ShoeDetailFragmentDirections.
-            actionShoeDetailFragmentToShoeListFragment(name, company, size, description)
+            view.findNavController().navigate(ShoeListFragmentDirections.
+            actionShoeListFragmentToShoeDetailFragment()
             )
             }
 

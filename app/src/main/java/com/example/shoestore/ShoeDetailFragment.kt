@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
+import androidx.navigation.ui.navigateUp
 import com.example.shoestore.databinding.ShoeDetailFragmentBinding
 import timber.log.Timber
 
