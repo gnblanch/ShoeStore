@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <string name="instructions_content_one">To view the existing list of shoes, press the "View List" button. </string>
+    <string name="instructions_content_two">To enter new shoes, press the "Shoe Details" button. </string>
+
+</resources>
